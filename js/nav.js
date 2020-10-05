@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".topnav, .sidenav").forEach(function (elm) {
           elm.innerHTML = xhttp.responseText;
         });
+
+        //load click nav page
       }
     };
     xhttp.open("GET", "nav.html", true);
@@ -48,6 +50,4 @@ document.addEventListener("DOMContentLoaded", function () {
     xhttp.open("GET", `pages/${page}.html`, true);
     xhttp.send();
   }
-
-  //
 });
