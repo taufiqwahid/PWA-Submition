@@ -17,7 +17,20 @@ document.addEventListener("DOMContentLoaded", function () {
           elm.innerHTML = xhttp.responseText;
         });
 
-        //load click nav page
+        //load click per nav page
+        document
+          .querySelectorAll(".sidenav a, .topnav a")
+          .forEach(function (elm) {
+            elm.addEventListener("click", function (event) {
+              //tutup sidenav
+              var sidenav = document.querySelector(".sidenav");
+              M.Sidenav.getInstance(sidenav).close();
+
+              //muat konten halaman yang dipanggil
+              page = event.target.getAttribute("href").substr(1);
+              loadPage(page);
+            });
+          });
       }
     };
     xhttp.open("GET", "nav.html", true);
