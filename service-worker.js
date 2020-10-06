@@ -5,6 +5,7 @@ var urlsToCache = [
   "/nav.html",
   "/index.html",
   "/pages/home.html",
+  "/pages/article.html",
   "/pages/about.html",
   "/pages/contact.html",
   "/css/materialize.min.css",
@@ -20,12 +21,20 @@ var urlsToCache = [
   "/assets/images/saturnus.jpg",
   "/assets/images/uranus.jpg",
   "/assets/images/neptunus.jpg",
+  "/assets/images/articlemars.jpg",
+  "/assets/images/articlemars2.jpg",
+  "/assets/icons/icon192x192.png",
+  "/assets/icons/icon256x256.png",
+  "/assets/icons/icon384x384.png",
+  "/assets/icons/icon512x512.png",
 ];
 
 self.addEventListener("install", function (event) {
-  caches.open(CACHE_NAME).then(function (cache) {
-    return cache.addAll(urlsToCache);
-  });
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(function (cache) {
+      return cache.addAll(urlsToCache);
+    }),
+  );
 });
 
 self.addEventListener("fetch", function (event) {

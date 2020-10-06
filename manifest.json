@@ -1,0 +1,32 @@
+{
+  "theme_color": "#4a90e2",
+  "background_color": "#4a90e2",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/index.html",
+  "name": "PlanetPWA - Submition 1",
+  "description": "This Progresif Web Application for submition first to Dicoding",
+  "short_name": "PlanetPWA",
+  "icons": [
+    {
+      "src": "assets/icons/icon192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
