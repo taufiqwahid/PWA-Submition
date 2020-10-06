@@ -1,10 +1,10 @@
-const CACHE_NAME = "submitionpwa1-v1";
+const CACHE_NAME = "submitionpwa1-v2";
 
 var urlsToCache = [
   "/",
   "/nav.html",
   "/index.html",
-  "/pages/home.html",
+  // "/pages/home.html",
   "/pages/article.html",
   "/pages/about.html",
   "/pages/contact.html",
