@@ -74,7 +74,7 @@ self.addEventListener("activate", (event) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
           if (cacheName != CACHE_NAME) {
-            console.log("ServiceWorker: cache " + cacheName + " dihapus");
+            console.log(`ServiceWorker: cache ${cacheName} dihapus`);
             return caches.delete(cacheName);
           }
         }),
