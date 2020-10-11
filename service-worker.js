@@ -11,6 +11,7 @@ const urlsToCache = [
   "/css/materialize.min.css",
   "/js/materialize.min.js",
   "/js/nav.js",
+  "/js/sw-register.js",
   "/manifest.json",
   "/assets/images/matahari.jpg",
   "/assets/images/merkurius.jpg",
@@ -29,6 +30,10 @@ const urlsToCache = [
   "/assets/icons/android-icon-96x96.png",
   "/assets/icons/android-icon-144x144.png",
   "/assets/icons/android-icon-192x192.png",
+  "/assets/icons/icon256x256.png",
+  "/assets/icons/icon384x384.png",
+  "/assets/icons/icon512x512.png",
+  "/assets/icons/ms-icon-144x144.png",
   "/assets/icons/apple-icon-57x57.png",
   "/assets/icons/apple-icon-60x60.png",
   "/assets/icons/apple-icon-72x72.png",
@@ -40,7 +45,6 @@ const urlsToCache = [
   "/assets/icons/favicon-16x16.png",
   "/assets/icons/favicon-32x32.png",
   "/assets/icons/favicon-96x96.png",
-  "/assets/icons/ms-icon-144x144.png",
   "css/style.css",
 ];
 
